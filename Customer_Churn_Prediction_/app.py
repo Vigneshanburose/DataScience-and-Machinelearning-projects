@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 import xgboost as xgb
 import plotly.express as px
 import json
-
+app = Flask(__name__)
 def preprocess_data(df):
     """Preprocess the data consistently for both training and prediction."""
     # Drop unnecessary columns
