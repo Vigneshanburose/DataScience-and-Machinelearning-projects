@@ -7,7 +7,7 @@ import xgboost as xgb
 import plotly.express as px
 import json
 import os
-file_path = os.path.join(os.path.dirname(__file__), 'Customer_Churn_Prediction_/BankChurners.csv')
+file_path = os.path.join(os.path.dirname(__file__), 'BankChurners.csv')
 
 app = Flask(__name__)
 def preprocess_data(df):
