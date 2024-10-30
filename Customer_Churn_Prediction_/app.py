@@ -6,6 +6,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 import xgboost as xgb
 import plotly.express as px
 import json
+import joblib
 import os
 file_path = os.path.join(os.path.dirname(__file__), 'BankChurners.csv')
 
@@ -68,6 +69,8 @@ def train_model():
     )
     
     model.fit(X_train_scaled, y_train)
+    joblib.dump(model, 'xgb_model.pkl')
+    joblib.dump(scaler, 'scaler.pkl')
     
     return model, scaler, X.columns
 
@@ -87,7 +90,9 @@ def predict():
         # Preprocess input data
         processed_input = preprocess_data(input_df)
         
-        # Load and train model (in production, you'd want to save/load the model instead of training each time)
+        # Load and train model 
+        model = joblib.load('xgb_model.pkl')
+        scaler = joblib.load('scaler.pkl')
         model, scaler, feature_names = train_model()
         
         # Ensure input features match training features
