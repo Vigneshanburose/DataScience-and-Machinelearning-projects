@@ -6,6 +6,9 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 import xgboost as xgb
 import plotly.express as px
 import json
+import os
+file_path = os.path.join(os.path.dirname(__file__), 'Customer_Churn_Prediction_/BankChurners.csv')
+
 app = Flask(__name__)
 def preprocess_data(df):
     """Preprocess the data consistently for both training and prediction."""
@@ -36,7 +39,7 @@ def preprocess_data(df):
 def train_model():
     """Load data, preprocess, and train the model."""
     # Load the dataset
-    df = pd.read_csv("Customer_Churn_Prediction_/BankChurners.csv")
+    df = pd.read_csv(file_path)
     
     # Preprocess data
     df_processed = preprocess_data(df)
