@@ -36,7 +36,7 @@ def preprocess_data(df):
 def train_model():
     """Load data, preprocess, and train the model."""
     # Load the dataset
-    df = pd.read_csv("C:\\Users\\Vignesh Anburose\\Documents\\BankChurners.csv")
+    df = pd.read_csv("Customer_Churn_Prediction_/BankChurners.csv")
     
     # Preprocess data
     df_processed = preprocess_data(df)
