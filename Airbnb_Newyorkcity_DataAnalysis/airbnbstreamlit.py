@@ -7,8 +7,7 @@ import matplotlib.pyplot as plt
 
 @st.cache_data
 def load_data():
-    """Load and preprocess the Airbnb dataset"""
-    df = pd.read_csv(r"https://www.kaggle.com/datasets/vigneshanburose/listings")
+    df = pd.read_csv(r"https://www.kaggle.com/datasets/vigneshanburose/listings/listings.csv")
     
     # Basic preprocessing
     df['price'] = df['price'].str.replace('$', '').str.replace(',', '').astype(float)
