@@ -10,7 +10,7 @@ import requests
 
 @st.cache
 def load_data_from_github():
-    url = 'https://github.com/Vigneshanburose/DataScience-and-Machinelearning-projects/edit/main/Airbnb_Newyorkcity_DataAnalysis/listings.csv.bz2' 
+    url = 'https://github.com/Vigneshanburose/DataScience-and-Machinelearning-projects/edit/main/Airbnb_Newyorkcity_DataAnalysis/listings.zip' 
     response = requests.get(url)
     zip_file = zipfile.ZipFile(io.BytesIO(response.content))
     
