@@ -6,7 +6,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Dataset URL
-DATASET_URL = r"https://www.kaggle.com/datasets/vigneshanburose/airbnb-listings/listings.csv"
+DATASET_URL = r"https://www.kaggle.com/datasets/vigneshanburose/listings"
 
 @st.cache_data
 def load_data():
