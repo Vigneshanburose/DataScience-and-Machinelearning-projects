@@ -35,15 +35,8 @@ Welcome to the **Data Science and Machine Learning Projects** repository!
 ### 📈 Business Intelligence
 ![Power BI](https://img.shields.io/badge/PowerBI-F2C811?style=flat&logo=powerbi&logoColor=black)
 
-
-## 🏆 GitHub Stats
-![Vignesh's GitHub stats](https://github-readme-stats.vercel.app/api?username=vignesh-a&show_icons=true&theme=radical)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=vignesh-a&layout=compact&theme=radical)](https://github.com/vignesh-a)
-
----
-
 ## 🔗 Let's Connect
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://linkedin.com/in/your-link)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://linkedin.com/in/vigneshanburose)
 [![Portfolio](https://img.shields.io/badge/Portfolio-black?style=flat&logo=firefox)](https://your-portfolio-link)
 
 ## ✨ **Let's Build Together**
