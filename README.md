@@ -4,9 +4,8 @@ Welcome to the **Data Science and Machine Learning Projects** repository!
 
 🚀 **Software Engineer | Data Enthusiast | Machine Learning Practitioner**
 
-- 🔭 I’m currently working on [Your Coolest Project](link-to-project).
 - 🌱 Currently I’m exploring **LLM** and **Pretrained Models**.
-- 💡 Fun Fact: I love building tools that solve everyday problems!
+- 💡 Fun Fact: I love building Data and ML tools along with exploring algorithms and diving deep into analysis .
 - 📫 Reach me at [vigneshanburose@gmail.com](mailto:vigneshanburose@gmail.com) or [LinkedIn](https://linkedin.com/in/vigneshanburose).
 
 ---
