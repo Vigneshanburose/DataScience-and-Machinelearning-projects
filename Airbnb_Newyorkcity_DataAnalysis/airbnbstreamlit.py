@@ -5,13 +5,10 @@ import plotly.graph_objects as go
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Dataset URL
-DATASET_URL = r"https://www.kaggle.com/datasets/vigneshanburose/listings"
-
 @st.cache_data
 def load_data():
     """Load and preprocess the Airbnb dataset"""
-    df = pd.read_csv(DATASET_URL)
+    df = pd.read_csv(r"https://www.kaggle.com/datasets/vigneshanburose/listings")
     
     # Basic preprocessing
     df['price'] = df['price'].str.replace('$', '').str.replace(',', '').astype(float)
