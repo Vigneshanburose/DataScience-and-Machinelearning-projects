@@ -16,7 +16,7 @@ def load_data_from_github():
     
     # Extract the contents to a temporary folder and read the CSV
     zip_file.extractall("/tmp/dataset")  
-    df = pd.read_csv('/tmp/dataset/airbnb_listings.csv')  
+    df = pd.read_csv('/tmp/dataset/listings.csv')  
     return df
 
 @st.cache_data
