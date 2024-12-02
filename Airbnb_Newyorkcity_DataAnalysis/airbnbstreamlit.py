@@ -4,25 +4,14 @@ import plotly.express as px
 import plotly.graph_objects as go
 import seaborn as sns
 import matplotlib.pyplot as plt
-import zipfile
-import io
-import requests
 
-@st.cache
-def load_data_from_github():
-    url = 'https://github.com/Vigneshanburose/DataScience-and-Machinelearning-projects/blob/main/Airbnb_Newyorkcity_DataAnalysis/listings.zip' 
-    response = requests.get(url)
-    zip_file = zipfile.ZipFile(io.BytesIO(response.content))
-    
-    # Extract the contents to a temporary folder and read the CSV
-    zip_file.extractall("/tmp/dataset")  
-    df = pd.read_csv('/tmp/dataset/listings.csv')  
-    return df
+# Dataset URL
+DATASET_URL = r"https://www.kaggle.com/datasets/vigneshanburose/airbnb-listings/listings.csv"
 
 @st.cache_data
 def load_data():
     """Load and preprocess the Airbnb dataset"""
-    df = load_data_from_github()
+    df = pd.read_csv(DATASET_URL)
     
     # Basic preprocessing
     df['price'] = df['price'].str.replace('$', '').str.replace(',', '').astype(float)
