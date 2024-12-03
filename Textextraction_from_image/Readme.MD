@@ -1,4 +1,5 @@
 🖼️ Image-to-Text Extraction Tool :
+
 A Flask-powered web application that extracts text from uploaded images using Tesseract OCR. The app leverages image preprocessing techniques to improve recognition accuracy and provides a user-friendly interface for text extraction.
 
 🚀 Features
@@ -9,13 +10,16 @@ A Flask-powered web application that extracts text from uploaded images using Te
 5. Cloud Deployment: Ready for deployment on platforms like Render
 
 🛠️ Tech Stack
+
 1.Backend: Flask, Python
 2.Frontend: HTML, CSS, JavaScript
 3.OCR: Tesseract OCR
 4. Image Processing: OpenCV, PIL (Pillow)
 5. Deployment: Render
 
+
 🖥️ How It Works
+
 1. Upload an Image: Select an image from your device.
 2. Preprocessing: The image is processed (grayscale and thresholding).
 3. OCR: Text is extracted from the processed image using Tesseract.
@@ -27,9 +31,7 @@ Prerequisites:
 2. Tesseract OCR installed on your system (Download Tesseract)
 
 Installation :-
-1. Clone the repository:
-git clone https://github.com/your-username/image-to-text-ocr.git  
-cd image-to-text-ocr  
+1. Clone the repository  
 
 2. Install dependencies:
 pip install -r requirements.txt 
