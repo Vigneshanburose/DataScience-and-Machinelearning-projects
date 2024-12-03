@@ -7,8 +7,12 @@ The tool leverages Logistic Regression and Naive Bayes for sentiment classificat
 Technologies Used :
 
 Programming Language: Python
+
 Frameworks: Flask, Flask-CORS
+
 Machine Learning: scikit-learn, NLTK
+
 Frontend: HTML, TailwindCSS, JavaScript
+
 Model Persistence: Pickle
 
