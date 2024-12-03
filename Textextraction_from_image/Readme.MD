@@ -12,9 +12,13 @@ A Flask-powered web application that extracts text from uploaded images using Te
 🛠️ Tech Stack
 
 1.Backend: Flask, Python
+
 2.Frontend: HTML, CSS, JavaScript
+
 3.OCR: Tesseract OCR
+
 4. Image Processing: OpenCV, PIL (Pillow)
+
 5. Deployment: Render
 
 
