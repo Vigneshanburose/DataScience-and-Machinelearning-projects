@@ -1,5 +1,7 @@
 🖼️ Image-to-Text Extraction Tool :
 
+Explore the live demo of the application here https://textextraction-from-image.onrender.com
+
 A Flask-powered web application that extracts text from uploaded images using Tesseract OCR. The app leverages image preprocessing techniques to improve recognition accuracy and provides a user-friendly interface for text extraction.
 
 🚀 Features
