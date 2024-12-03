@@ -1,0 +1,339 @@
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="bg-gradient-to-r from-blue-500 to-purple-500 font-roboto">
+  <header class="bg-gray-800 text-white">
+   <div class="container mx-auto flex justify-between items-center py-4 px-6 max-w-4xl">
+    <div class="flex items-center">
+     <img alt="Logo" class="mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/7MktBmDTKKqRL5FyNGHEHj8G6Jues7x2AJ8sVqmoAyw7Ij7JA.jpg" width="40"/>
+     <span class="text-xl font-bold">
+      My Portfolio
+     </span>
+    </div>
+    <nav class="flex space-x-6">
+     <a class="hover:text-gray-400" href="#about">
+      About
+     </a>
+     <a class="hover:text-gray-400" href="#experience">
+      Experience
+     </a>
+     <a class="hover:text-gray-400" href="#education">
+      Education
+     </a>
+     <a class="hover:text-gray-400" href="#skills">
+      Skills
+     </a>
+     <a class="hover:text-gray-400" href="#projects">
+      Projects
+     </a>
+     <a class="hover:text-gray-400" href="#contact">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="container mx-auto px-6 py-20 max-w-4xl">
+   <section class="text-center mb-20 bg-white bg-opacity-20 p-10 rounded-lg shadow-lg">
+    <h1 class="text-6xl font-bold mb-4 text-white">
+     Welcome to My Portfolio
+    </h1>
+    <p class="text-lg mb-8 text-white">
+     Hi, I'm Vignesh, a passionate developer.
+    </p>
+   </section>
+   <section class="mb-20 bg-white bg-opacity-30 p-10 rounded-lg shadow-lg" id="about">
+    <h2 class="text-4xl font-bold mb-6 text-white">
+     About Me
+    </h2>
+    <div class="bg-white bg-opacity-40 p-8 rounded-lg shadow-lg">
+     <div class="flex items-center mb-4">
+      <img alt="Profile Picture" class="rounded-full w-24 h-24 mr-4" height="96" src="https://storage.googleapis.com/a1aa/image/yaDtRxS4F755PteKRoh2AfkC4duDfxae0T6wpKfTFsDWPy4eE.jpg" width="96"/>
+      <div>
+       <h3 class="text-2xl font-bold text-gray-800">
+        Vignesh Anburose
+       </h3>
+       <p class="text-gray-600">
+        Web Developer &amp; Software Engineer
+       </p>
+      </div>
+     </div>
+     <p class="text-lg text-gray-800 mb-4">
+      I am Vignesh, a 2023 M.Sc. Data Science graduate, with 1 year of experience as a Post Graduate Trainee (R&amp;D Software Development Engineering) at ZF Commercial Vehicle Control Systems India Ltd. I am actively seeking opportunities in Data Science, Machine Learning, and Software Development.
+      I’m passionate about creating impactful solutions at the intersection of data, algorithms, ML models, business insights, and software development. My expertise lies in building scalable data tools and crafting robust software solutions, powered by a strong foundation in Python, SQL, and frameworks like Django and Flask.
+     </p>
+     <div class="text-lg text-gray-800">
+      <p class="mb-2">
+       <i class="fas fa-phone-alt mr-2">
+       </i>
+       +919629122074
+      </p>
+      <p class="mb-2">
+       <i class="fas fa-envelope mr-2">
+       </i>
+       <a class="text-blue-600 hover:underline" href="mailto:vigneshanburose@gmail.com">
+        vigneshanburose@gmail.com
+       </a>
+      </p>
+      <p class="mb-2">
+       <i class="fab fa-linkedin mr-2">
+       </i>
+       <a class="text-blue-600 hover:underline" href="https://www.linkedin.com/in/vigneshanburose" target="_blank">
+        LinkedIn
+       </a>
+      </p>
+      <p class="mb-2">
+       <i class="fab fa-github mr-2">
+       </i>
+       <a class="text-blue-600 hover:underline" href="https://github.com/Vigneshanburose/DataScience-and-Machinelearning-projects" target="_blank">
+        GitHub
+       </a>
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mb-20 bg-white bg-opacity-20 p-10 rounded-lg shadow-lg" id="experience">
+    <h2 class="text-4xl font-bold mb-6 text-white">
+     Work Experience
+    </h2>
+    <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg mb-6">
+     <h3 class="text-xl font-bold mb-2 text-white">
+      Post Graduate Trainee (R&amp;D Software Development Engineering)
+     </h3>
+     <p class="text-gray-200 mb-4">
+      ZF Commercial Vehicle Control Systems - Chennai
+     </p>
+     <p class="text-gray-200 mb-4">
+      July, 2023 - June, 2024
+     </p>
+     <p class="text-gray-800 mb-4">
+      I was part of the product innovation team where we focus on PoC and demo-driven innovation by developing PoC projects and demonstrating them to customers and Higher Management within the organization.
+     </p>
+     <ul class="list-disc list-inside text-gray-800 mb-4">
+      <li class="mb-2">
+       <strong>Cargo Monitoring System:</strong> Captures images of cargo every second, uploads them to AWS S3, and displays them in real-time on a local dashboard for live monitoring.
+      </li>
+      <li class="mb-2">
+       <strong>Driver Monitoring System:</strong> Captures real-time images of the driver and displays these frames on a dashboard. Each image is accompanied by details such as the time of capture and detected behaviors, promoting safer driving by monitoring driver alertness.
+      </li>
+      <li class="mb-2">
+       <strong>Tire Pressure Monitoring System:</strong> Displays the pressure of each tire in the vehicle on the dashboard. This real-time monitoring helps ensure optimal tire performance and safety while driving.
+      </li>
+      <li class="mb-2">
+       <strong>Data Pipeline for Condition Monitoring:</strong> The Condition Monitoring project features a data pipeline that assesses the state of a product by analyzing uploaded data. It displays the product’s condition, indicating its degradation rate and classifying it as either degraded or in good condition, enabling proactive maintenance and decision-making.
+      </li>
+     </ul>
+     <p class="text-gray-800 mb-4">
+      Volunteered and participated in a tech conference organized by the team. Presented a project at the tech conference within the organization, showcasing innovative solutions and technological advancements.
+     </p>
+     <p class="text-gray-800 mb-4">
+      Participated in ideation sessions to identify and develop problem statements. Submitted two innovative Idea Forms (IDFs) as part of the ideation process.
+     </p>
+    </div>
+   </section>
+   <section class="mb-20 bg-white bg-opacity-20 p-10 rounded-lg shadow-lg" id="education">
+    <h2 class="text-4xl font-bold mb-6 text-white">
+     Education
+    </h2>
+    <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg mb-6">
+     <h3 class="text-xl font-bold mb-2 text-white">
+      M.Sc. Applied Data Science
+     </h3>
+     <p class="text-gray-200 mb-4">
+      SRM Institute of Science and Technology - Chennai
+     </p>
+     <p class="text-gray-200 mb-4">
+      September, 2021 - June, 2023
+     </p>
+     <p class="text-gray-200 mb-4">
+      CGPA: 8.88
+     </p>
+    </div>
+    <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg mb-6">
+     <h3 class="text-xl font-bold mb-2 text-white">
+      B.C.A Computer Science
+     </h3>
+     <p class="text-gray-200 mb-4">
+      Vellore Institute of Technology (VIT) - Vellore
+     </p>
+     <p class="text-gray-200 mb-4">
+      July, 2018 - May, 2021
+     </p>
+     <p class="text-gray-200 mb-4">
+      CGPA: 7.82
+     </p>
+    </div>
+   </section>
+   <section class="mb-20 bg-white bg-opacity-20 p-10 rounded-lg shadow-lg" id="skills">
+    <h2 class="text-4xl font-bold mb-6 text-white">
+     Skills
+    </h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg flex items-center">
+      <i class="fab fa-python text-4xl text-blue-500 mr-4">
+      </i>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       Python
+      </h3>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg flex items-center">
+      <i class="fas fa-database text-4xl text-blue-600 mr-4">
+      </i>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       SQL
+      </h3>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg flex items-center">
+      <i class="fab fa-js-square text-4xl text-yellow-500 mr-4">
+      </i>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       JavaScript
+      </h3>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg flex items-center">
+      <i class="fas fa-chart-line text-4xl text-green-500 mr-4">
+      </i>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       Pandas
+      </h3>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg flex items-center">
+      <i class="fas fa-chart-bar text-4xl text-yellow-500 mr-4">
+      </i>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       Numpy
+      </h3>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg flex items-center">
+      <i class="fas fa-chart-pie text-4xl text-red-500 mr-4">
+      </i>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       Matplotlib
+      </h3>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg flex items-center">
+      <i class="fas fa-chart-area text-4xl text-purple-500 mr-4">
+      </i>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       Plotly
+      </h3>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg flex items-center">
+      <i class="fas fa-brain text-4xl text-pink-500 mr-4">
+      </i>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       Scikit-learn
+      </h3>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg flex items-center">
+      <i class="fas fa-brain text-4xl text-red-500 mr-4">
+      </i>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       PyTorch
+      </h3>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg flex items-center">
+      <i class="fab fa-aws text-4xl text-orange-500 mr-4">
+      </i>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       AWS
+      </h3>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg flex items-center">
+      <i class="fas fa-bolt text-4xl text-yellow-500 mr-4">
+      </i>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       Spark
+      </h3>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg flex items-center">
+      <i class="fas fa-hdd text-4xl text-blue-500 mr-4">
+      </i>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       Hadoop
+      </h3>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg flex items-center">
+      <i class="fas fa-server text-4xl text-gray-500 mr-4">
+      </i>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       Django
+      </h3>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg flex items-center">
+      <i class="fas fa-flask text-4xl text-blue-500 mr-4">
+      </i>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       Flask
+      </h3>
+     </div>
+    </div>
+   </section>
+   <section class="mb-20 bg-white bg-opacity-20 p-10 rounded-lg shadow-lg" id="projects">
+    <h2 class="text-4xl font-bold mb-6 text-white">
+     Projects
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg">
+      <img alt="Sentiment Analysis project thumbnail" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/k9K0sHe6WVzIYihlFhjeedwhR9NNO01fjkno1KyWy8qDiccPB.jpg" width="600"/>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       Sentiment Analysis
+      </h3>
+      <p class="text-gray-200 mb-4">
+       Description of Sentiment Analysis project.
+      </p>
+      <div class="flex space-x-4">
+       <a class="text-blue-600 hover:underline" href="https://github.com/Vigneshanburose/DataScience-and-Machinelearning-projects/tree/main/Sentiment%20Analysis%20on%20Amazon%20product%20review">
+        <i class="fab fa-github">
+        </i>
+        GitHub
+       </a>
+       <a class="text-blue-600 hover:underline" href="https://sentiment-analysis-on-amazon-product-ot26.onrender.com">
+        Live Demo
+       </a>
+      </div>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg">
+      <img alt="Churn Prediction project thumbnail" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/PK6PB2KTFNKVNpXyCxfRw06Hq981xJBbBrQu22LhEHfjIH3TA.jpg" width="600"/>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       Churn Prediction
+      </h3>
+      <p class="text-gray-200 mb-4">
+       Description of Churn Prediction project.
+      </p>
+      <div class="flex space-x-4">
+       <a class="text-blue-600 hover:underline" href="#">
+        <i class="fab fa-github">
+        </i>
+        GitHub
+       </a>
+       <a class="text-blue-600 hover:underline" href="#">
+        Live Demo
+       </a>
+      </div>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg">
+      <img alt="Text Extraction from image project thumbnail" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/SR5InqteejnADEBTjjMyNfwkYaFglxzzRcyl6AwXldpFROunA.jpg" width="600"/>
+      <h3 class="text-xl font-bold mb-2 text-white">
+       Text Extraction from Image
+      </h3>
+      <p class="text-gray-200 mb-4">
+       Description of Text Extraction from Image project.
+      </p>
+      <div class="flex space-x-4">
+       <a class="text-blue-600 hover:underline" href="#">
+        <i class="fab fa-github">
+        </i>
+        GitHub
+       </a>
+       <a class="text-blue-600 hover:underline" href="#">
+        Live Demo
+       </a>
+      </div>
+     </div>
+     <div class="bg-white bg-opacity-30 p-6 rounded-lg shadow-lg">
+      <img alt="New York City Airbnb Listings Data Analysis project thumbnail" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/HB85sNY6jgogDxkXSDXKg2YtNPoxfvfeGMybokcMXHsJROunA.jpg" width="600"/>
+      <h3 class="text-xl font-bold
