@@ -30,7 +30,20 @@ def preprocess_data(df):
     df['Transaction_Frequency'] = df['Total_Trans_Ct'] / df['Months_on_book']
 
     return df
+# Global model and scaler variables
+model = None
+scaler = None
+feature_names = None
 
+# Function to load the model
+def load_model():
+    global model, scaler, feature_names
+    if model is None:
+        model = joblib.load('xgb_model.pkl')
+        scaler = joblib.load('scaler.pkl')
+        feature_names = joblib.load('feature_names.pkl')
+
+load_model()  # Load the model once when the app starts
 @app.route('/')
 def home():
     """Render the index.html file."""
@@ -39,10 +52,7 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        model = joblib.load('xgb_model.pkl')
-        scaler = joblib.load('scaler.pkl')
-        feature_names = joblib.load('feature_names.pkl')
-
+        # Use the loaded model and scaler
         customer_data = request.get_json()
         input_df = pd.DataFrame([customer_data])
 
@@ -67,45 +77,9 @@ def predict():
             'churn_probability': churn_prob,
             'prevention_strategies': strategies
         })
-    except FileNotFoundError:
-        return jsonify({'error': 'Required model or scaler files are missing.'}), 500
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-# @app.route('/predict', methods=['POST'])
-# def predict():
-#     try:
-#         model = joblib.load('xgb_model.pkl')
-#         scaler = joblib.load('scaler.pkl')
-#         feature_names = joblib.load('feature_names.pkl')
-
-#         customer_data = request.get_json()
-#         input_df = pd.DataFrame([customer_data])
-
-#         processed_input = preprocess_data(input_df)
-#         missing_cols = set(feature_names) - set(processed_input.columns)
-#         for col in missing_cols:
-#             processed_input[col] = 0
-
-#         processed_input = processed_input[feature_names]
-#         input_scaled = scaler.transform(processed_input)
-
-#         churn_prob = model.predict_proba(input_scaled)[0][1]
-
-#         strategies = []
-#         if customer_data.get('Total_Trans_Amt', 0) < 5000:
-#             strategies.append("Encourage more card usage through targeted rewards programs")
-#         if customer_data.get('Contacts_Count_12_mon', 0) > 3:
-#             strategies.append("Proactively reach out to address potential concerns")
-
-#         return jsonify({
-#             'churn_probability': churn_prob,
-#             'prevention_strategies': strategies
-#         })
-#     except FileNotFoundError:
-#         return jsonify({'error': 'Required model or scaler files are missing.'}), 500
-#     except Exception as e:
-#         return jsonify({'error': str(e)}), 500
 
 def train_model():
     df = pd.read_csv(file_path)
