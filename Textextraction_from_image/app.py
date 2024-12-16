@@ -1,17 +1,22 @@
-from flask import Flask, render_template, request, jsonify  # Add render_template here
+from flask import Flask, render_template, request, jsonify  
 from flask_cors import CORS
 import pytesseract
 from PIL import Image
 import cv2
 import numpy as np
 import os
+import platform
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)  # Allow cross-origin requests for local development
+CORS(app)  
 
-# Set Tesseract executable path (adjust for your system)
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+if platform.system() == "Windows":
+    # Path for local Windows development
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+else:
+    # Path for Render/Linux deployment
+    pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
 
 @app.route('/')
 def index():
